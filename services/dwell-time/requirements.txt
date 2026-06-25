@@ -1,0 +1,5 @@
+confluent-kafka==2.5.3
+psycopg[binary]==3.2.3
+pydantic==2.9.2
+structlog==24.4.0
+prometheus-client==0.21.0

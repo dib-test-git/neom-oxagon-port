@@ -1,0 +1,8 @@
+psycopg[binary]==3.2.3
+jinja2==3.1.4
+weasyprint==62.3
+looker-sdk==24.16.2
+boto3==1.35.50
+pydantic==2.9.2
+structlog==24.4.0
+click==8.1.7
