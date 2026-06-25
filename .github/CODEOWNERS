@@ -1,0 +1,14 @@
+# Default owners for everything in this repo
+* @neom-oxagon-leads
+
+# Platform data team owns ingestion, Kafka, analytics
+/services/dwell-time/ @neom-platform-data @neom-oxagon-leads
+/services/tenant-reports/ @neom-platform-data
+/services/sap-integration/ @neom-platform-data @neom-oxagon-leads
+
+# Customs / regulatory
+/services/customs-fasah/ @neom-oxagon-leads
+
+# Infra
+/infra/ @neom-platform-data
+/.github/ @neom-oxagon-leads

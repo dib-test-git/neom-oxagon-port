@@ -1,0 +1,27 @@
+{
+  "name": "@oxagon/dashboard",
+  "version": "0.4.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3010",
+    "build": "next build",
+    "start": "next start -p 3010",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "14.2.13",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "swr": "2.2.5",
+    "recharts": "2.13.0",
+    "date-fns": "3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.16.10",
+    "@types/react": "18.3.11",
+    "typescript": "5.6.2",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.13"
+  }
+}

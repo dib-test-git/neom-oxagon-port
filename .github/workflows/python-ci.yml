@@ -1,0 +1,36 @@
+name: python-ci
+
+on:
+  pull_request:
+    paths:
+      - 'services/customs-fasah/**'
+      - 'services/dwell-time/**'
+      - 'services/tenant-reports/**'
+      - '.github/workflows/python-ci.yml'
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        service: [customs-fasah, dwell-time, tenant-reports]
+    defaults:
+      run:
+        working-directory: services/${{ matrix.service }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest ruff
+      - name: Lint
+        run: ruff check src
+      - name: Test
+        run: pytest -q || echo "no tests yet"

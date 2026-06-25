@@ -1,0 +1,48 @@
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+hs_err_pid*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+.pnpm-store/
+*.tsbuildinfo
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+!example.tfvars
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+credentials.json
